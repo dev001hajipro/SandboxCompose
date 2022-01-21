@@ -13,7 +13,7 @@ class TodoRepository(private val dao: TodoDao) {
     suspend fun delete(x: TodoItem) {
         dao.delete(x)
     }
-    suspend fun deleteAll(x: TodoItem) {
+    suspend fun deleteAll() {
         dao.deleteAllTodos()
     }
 }
